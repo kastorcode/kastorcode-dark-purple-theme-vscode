@@ -53,7 +53,8 @@
       "name": "variable.parameter.function.language.special.self.python",
       "scope": "variable.parameter.function.language.special.self.python",
       "settings": {
-        "foreground": "#ffffff"
+        "fontStyle": "italic",
+        "foreground": "#ff79c6"
       }
     },
     {
@@ -155,6 +156,25 @@
       }
     },
     {
+      "name": "include",
+      "scope": [
+        "string.quoted.other.lt-gt.include.c"
+      ],
+      "settings": {
+        "foreground": "#ffffff"
+      }
+    },
+    {
+      "name": "primitive type",
+      "scope": [
+        "storage.type.built-in.primitive.c",
+        "storage.type.built-in.primitive.cpp"
+      ],
+      "settings": {
+        "foreground": "#8be9fd"
+      }
+    },
+    {
       "name": "c++ function",
       "scope": "meta.function.c,meta.function.cpp",
       "settings": {
@@ -172,7 +192,7 @@
       "name": "js/ts punctuation separator key-value",
       "scope": "punctuation.separator.key-value",
       "settings": {
-        "foreground": "#ffffff"
+        "foreground": "#ff79c6"
       }
     },
     {
@@ -336,7 +356,7 @@
       "name": "js variable readwrite",
       "scope": "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
       "settings": {
-        "foreground": "#ff79c6"
+        "foreground": "#ffffff"
       }
     },
     {
@@ -461,14 +481,15 @@
       "name": "python parameter",
       "scope": "variable.parameter.function.language.python",
       "settings": {
-        "foreground": "#ffb86c"
+        "fontStyle": "italic",
+        "foreground": "#ff79c6"
       }
     },
     {
       "name": "python type",
       "scope": "support.type.python",
       "settings": {
-        "foreground": "#7159c1"
+        "foreground": "#8be9fd"
       }
     },
     {
@@ -545,7 +566,7 @@
       "name": "Variables",
       "scope": "variable",
       "settings": {
-        "foreground": "#ff79c6"
+        "foreground": "#ffffff"
       }
     },
     {
@@ -638,7 +659,7 @@
       "name": "Class name php",
       "scope": "variable.other.class.php",
       "settings": {
-        "foreground": "#ff79c6"
+        "foreground": "#ffffff"
       }
     },
     {
@@ -701,7 +722,7 @@
       "name": "Support",
       "scope": "support.function",
       "settings": {
-        "foreground": "#7159c1"
+        "foreground": "#50fa7b"
       }
     },
     {
@@ -743,7 +764,8 @@
       "name": "Inherited Class",
       "scope": "entity.other.inherited-class",
       "settings": {
-        "foreground": "#ffffff"
+        "fontStyle": "italic",
+        "foreground": "#ff79c6"
       }
     },
     {
@@ -785,7 +807,7 @@
       "name": "Attributes",
       "scope": "entity.other.attribute-name",
       "settings": {
-        "foreground": "#ffb86c"
+        "foreground": "#50fa7b"
       }
     },
     {
@@ -1052,14 +1074,14 @@
       "name": "[VSCODE-CUSTOM] JSON Property Name",
       "scope": "support.type.property-name.json",
       "settings": {
-        "foreground": "#ff79c6"
+        "foreground": "#7159c1"
       }
     },
     {
       "name": "[VSCODE-CUSTOM] JSON Punctuation for Property Name",
       "scope": "support.type.property-name.json punctuation",
       "settings": {
-        "foreground": "#ff79c6"
+        "foreground": "#7159c1"
       }
     },
     {
@@ -1080,7 +1102,7 @@
       "name": "use statement for other classes",
       "scope": "support.other.namespace.use.php,support.other.namespace.use-as.php,support.other.namespace.php,entity.other.alias.php,meta.interface.php",
       "settings": {
-        "foreground": "#ffffff"
+        "foreground": "#ff79c6"
       }
     },
     {
@@ -1122,7 +1144,7 @@
       "name": "php types",
       "scope": "storage.type.php,meta.other.type.phpdoc.php,keyword.other.type.php,keyword.other.array.phpdoc.php",
       "settings": {
-        "foreground": "#ffffff"
+        "foreground": "#8be9fd"
       }
     },
     {
@@ -1186,6 +1208,17 @@
       "scope": "keyword.operator.heredoc.php,keyword.operator.nowdoc.php",
       "settings": {
         "foreground": "#7159c1"
+      }
+    },
+    {
+      "name": "Parameters inside PHP function",
+      "scope": [
+        "meta.function.parameter variable",
+        "meta.function.parameter punctuation.definition.variable.php"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#ff79c6"
       }
     },
     {
@@ -1789,8 +1822,7 @@
       "name": "Comments",
       "scope": "comment, punctuation.definition.comment",
       "settings": {
-        "fontStyle": "italic",
-        "foreground": "#ffffff80"
+        "foreground": "#a3a3a3"
       }
     },
     {
@@ -1816,24 +1848,28 @@
       }
     },
     {
-      "name": "js/ts italic",
-      "scope": "entity.other.attribute-name.js,entity.other.attribute-name.ts,entity.other.attribute-name.jsx,entity.other.attribute-name.tsx,variable.parameter,variable.language.super",
+      "name": "keyword new",
+      "scope": [
+        "keyword.operator.new",
+        "keyword.other.new.php"
+      ],
       "settings": {
-        "fontStyle": "italic"
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "js/ts italic",
+      "scope": "entity.other.attribute-name.js,entity.other.attribute-name.ts,entity.other.attribute-name.jsx,entity.other.attribute-name.tsx,variable.parameter",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#ff79c6"
       }
     },
     {
       "name": "comment",
       "scope": "comment.line.double-slash,comment.block.documentation",
       "settings": {
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "name": "Python Keyword Control",
-      "scope": "keyword.control.import.python,keyword.control.flow.python",
-      "settings": {
-        "fontStyle": "italic"
+        "foreground": "#a3a3a3"
       }
     },
     {
@@ -1841,6 +1877,85 @@
       "scope": "markup.italic.markdown",
       "settings": {
         "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Separators (key/value, namespace, inheritance, pointer, hash, slice, etc)",
+      "scope": [
+        "constant.other.symbol.hashkey punctuation.definition.constant.ruby",
+        "entity.other.attribute-name.placeholder punctuation",
+        "entity.other.attribute-name.pseudo-class punctuation",
+        "entity.other.attribute-name.pseudo-element punctuation",
+        "meta.group.double.toml",
+        "meta.group.toml",
+        "meta.object-binding-pattern-variable punctuation.destructuring",
+        "punctuation.colon.graphql",
+        "punctuation.definition.block.scalar.folded.yaml",
+        "punctuation.definition.block.scalar.literal.yaml",
+        "punctuation.definition.block.sequence.item.yaml",
+        "punctuation.definition.entity.other.inherited-class",
+        "punctuation.function.swift",
+        "punctuation.separator.dictionary.key-value",
+        "punctuation.separator.hash",
+        "punctuation.separator.inheritance",
+        "punctuation.separator.key-value",
+        "punctuation.separator.key-value.mapping.yaml",
+        "punctuation.separator.namespace",
+        "punctuation.separator.pointer-access",
+        "punctuation.separator.slice",
+        "string.unquoted.heredoc punctuation.definition.string",
+        "support.other.chomping-indicator.yaml",
+        "punctuation.separator.annotation"
+      ],
+      "settings": {
+        "foreground": "#ff79c6"
+      }
+    },
+    {
+      "name": "Destructuring / aliasing reference name (LHS)",
+      "scope": [
+        "meta.import variable.other.readwrite",
+        "meta.object-binding-pattern-variable variable.object.property",
+        "meta.variable.assignment.destructured.object.coffee variable"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#ff79c6"
+      }
+    },
+    {
+      "name": "Destructuring / aliasing variable name (RHS)",
+      "scope": [
+        "meta.import variable.other.readwrite.alias",
+        "meta.export variable.other.readwrite.alias",
+        "meta.variable.assignment.destructured.object.coffee variable variable"
+      ],
+      "settings": {
+        "fontStyle": "normal",
+        "foreground": "#ffffff"
+      }
+    },
+    {
+      "name": "this, super, self, etc.",
+      "scope": [
+        "keyword.expressions-and-types.swift",
+        "keyword.other.this",
+        "variable.language",
+        "variable.language punctuation.definition.variable.php",
+        "variable.other.readwrite.instance.ruby",
+        "variable.parameter.function.language.special"
+      ],
+      "settings": {
+        "foreground": "#ffb86c"
+      }
+    },
+    {
+      "name": "string concatenation",
+      "scope": [
+        "keyword.operator.string.php"
+      ],
+      "settings": {
+        "foreground": "#7159c1"
       }
     }
   ],
@@ -2104,7 +2219,7 @@
     "settings.focusedRowBackground": "#ffffff07",
     "walkThrough.embeddedEditorBackground": "#00000050",
     "breadcrumb.activeSelectionForeground": "#ffffff",
-    "editorGutter.commentRangeForeground": "#ffffff80",
+    "editorGutter.commentRangeForeground": "#a3a3a3",
     "debugExceptionWidget.background": "#030205",
     "debugExceptionWidget.border": "#00000000"
   }
