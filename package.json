@@ -1,0 +1,51 @@
+{
+    "name": "kastorcode-dark-purple-theme",
+    "displayName": "KastorCode Dark Purple Theme",
+    "icon": "icon.png",
+    "description": "This is a dark purple theme of my personal brand as a developer.",
+    "version": "0.9.9",
+    "homepage": "https://www.instagram.com/kastorcode",
+    "publisher": "kastorcode",
+    "scripts": {
+      "pack": "vsce package -o bundles/kastorcode-dark-purple-theme.vsix"
+    },
+    "maintainers": [
+      "Matheus Ramalho de Oliveira <kastorcode@gmail.com>"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/kastorcode/kastorcode-dark-purple-theme-vscode.git"
+    },
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+      "kastorcode",
+      "kastor",
+      "code",
+      "dark",
+      "purple",
+      "theme",
+      "color-theme",
+      "castor",
+      "beaver",
+      "matheus",
+      "ramalho",
+      "oliveira",
+      "goiania",
+      "goias",
+      "brazil"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "KastorCode Dark Purple Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/theme.json"
+            }
+        ]
+    }
+}
